@@ -1,0 +1,20 @@
+server:
+  port: 8091
+spring:
+  profiles:
+    active: dev
+  messages:
+    basename: i18n.login
+
+---
+server:
+  port: 8091
+spring:
+  profiles: dev
+  thymeleaf:
+    cache: false
+---
+server:
+  port: 8091
+spring:
+  profiles: prd
